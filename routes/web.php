@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MahasiswaController;
 use App\Http\Controllers\MatakuliahController;
+use App\Http\Controllers\HomeController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -37,3 +38,6 @@ Route::get('/mahasiswa/{param1}', [MahasiswaController::class, 'show']);
 Route::get('/matakuliah', [MatakuliahController::class, 'index']);
 
 Route::get('/matakuliah/show/{kode?}', [MatakuliahController::class, 'show']);
+
+// Pertemuan 5 Menambahkan Controller HomeController
+Route::get('/home', [HomeController::class, 'index']);
