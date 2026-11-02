@@ -270,7 +270,7 @@
                     <p class="mb-0">List data seluruh pelanggan</p>
                 </div>
                 <div>
-                    <a href="" class="btn btn-success text-white"><i class="far fa-question-circle me-1"></i> Tambah Pelanggan</a>
+                    <a href="{{ route('pelanggan.create') }}" class="btn btn-success text-white"><i class="far fa-question-circle me-1"></i> Tambah Pelanggan</a>
                 </div>
             </div>
         </div>
