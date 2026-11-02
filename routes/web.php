@@ -7,6 +7,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PelangganController;
+use App\Http\Controllers\CvController;
+use App\Http\Controllers\PengalamanOrganisasiController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -56,3 +58,6 @@ Route::get('/dashboard', [DashboardController::class, 'index'])
 // Pertemuan 8 (CRUD)
 Route::resource('pelanggan', PelangganController::class);
 
+//UTS
+Route::resource('uts', CvController::class);
+Route::resource('pengalaman-organisasi', PengalamanOrganisasiController::class)->except(['index', 'show']);
